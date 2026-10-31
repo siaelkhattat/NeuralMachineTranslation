@@ -1,0 +1,12 @@
+step,doda,total
+0. loaded rows,45103,45103
+1. non-empty,44713,44713
+2. quality flag (if any),44713,44713
+3. no URL / e-mail,44713,44713
+4. Darija is Latin script (Arabizi),44663,44663
+5. English is Latin script,44620,44620
+6. not mostly digits,44530,44530
+7. length in bounds,15067,15067
+8. length ratio,15040,15040
+9. duplicate Darija sentence,14996,14996
+10. valid English key,14996,14996

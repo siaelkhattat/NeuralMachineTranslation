@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-31",
+  "python": "3.13.18",
+  "pandas": "2.2.3",
+  "config": {
+    "seed": 42,
+    "split_ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "target_total": null,
+    "min_words": 5,
+    "max_words_darija": 35,
+    "max_words_english": 40,
+    "len_ratio_bounds": [
+      0.4,
+      3.0
+    ],
+    "min_latin_ratio_dar": 0.7,
+    "min_latin_ratio_en": 0.8,
+    "max_digit_ratio": 0.3,
+    "keep_only_quality_1": true,
+    "normalize_arabic_letters": false,
+    "max_group_size_eval": 5,
+    "holdout_sources": null
+  },
+  "sources": [
+    {
+      "name": "doda",
+      "hf_id": "atlasia/darija_english",
+      "hf_config": "doda",
+      "split": "train",
+      "priority": 0,
+      "max_rows": null,
+      "streaming": false
+    }
+  ],
+  "clean_pool": 14996,
+  "extra_train_pool": 0,
+  "split_sizes": {
+    "train": 10498,
+    "dev": 2249,
+    "test": 2249
+  },
+  "split_by_source": {
+    "doda": {
+      "train": 10498,
+      "dev": 2249,
+      "test": 2249
+    },
+    "total": {
+      "train": 10498,
+      "dev": 2249,
+      "test": 2249
+    }
+  },
+  "oov": {
+    "dev": {
+      "darija": 0.185,
+      "english": 0.0499
+    },
+    "test": {
+      "darija": 0.1859,
+      "english": 0.0519
+    }
+  },
+  "words_darija": {
+    "train": {
+      "mean": 6.9,
+      "median": 6.0,
+      "p95": 11.0,
+      "min": 5,
+      "max": 28
+    },
+    "dev": {
+      "mean": 6.92,
+      "median": 6.0,
+      "p95": 11.0,
+      "min": 5,
+      "max": 23
+    },
+    "test": {
+      "mean": 6.95,
+      "median": 6.0,
+      "p95": 11.0,
+      "min": 5,
+      "max": 29
+    }
+  },
+  "words_english": {
+    "train": {
+      "mean": 7.62,
+      "median": 7.0,
+      "p95": 13.0,
+      "min": 5,
+      "max": 31
+    },
+    "dev": {
+      "mean": 7.63,
+      "median": 7.0,
+      "p95": 12.0,
+      "min": 5,
+      "max": 31
+    },
+    "test": {
+      "mean": 7.62,
+      "median": 7.0,
+      "p95": 13.0,
+      "min": 5,
+      "max": 38
+    }
+  },
+  "arabic_in_darija_share": 0.0
+}
