@@ -1,0 +1,5 @@
+model,vocab,src_tokens_per_word,src_unk_pct,src_p99_len,tgt_tokens_per_word,tgt_unk_pct
+Helsinki-NLP/opus-mt-ar-en,62834,3.35,0.0,47.0,1.32,0.003
+Helsinki-NLP/opus-mt-mul-en,64172,2.79,0.0,39.0,1.28,0.0
+Helsinki-NLP/opus-mt-ROMANCE-en,65001,3.01,0.0,42.030000000000655,1.28,0.003
+Helsinki-NLP/opus-mt-fr-en,59514,2.99,0.0,42.0,1.28,0.003

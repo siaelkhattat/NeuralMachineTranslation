@@ -1,0 +1,9 @@
+system,metric,score,ci95,p_value_vs_baseline
+A0,BLEU,0.21,0.1,
+A1_seed13,BLEU,30.61,1.26,0.001
+A1_seed42,BLEU,30.86,1.36,0.001
+A1_seed2024,BLEU,30.96,1.26,0.001
+A0,chrF2++,8.56,0.14,
+A1_seed13,chrF2++,47.93,0.97,0.001
+A1_seed42,chrF2++,48.21,0.99,0.001
+A1_seed2024,chrF2++,48.52,0.93,0.001

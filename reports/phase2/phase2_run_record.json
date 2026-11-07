@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-07",
+  "smoke": false,
+  "config": {
+    "model_name": "Helsinki-NLP/opus-mt-ar-en",
+    "seeds": [
+      13,
+      42,
+      2024
+    ],
+    "max_src_len": 64,
+    "max_tgt_len": 64,
+    "batch_size": 32,
+    "grad_accum": 1,
+    "lr": 5e-05,
+    "weight_decay": 0.01,
+    "warmup_steps": 200,
+    "max_epochs": 10,
+    "patience": 3,
+    "label_smoothing": 0.1,
+    "num_beams": 4,
+    "max_new_tokens": 64,
+    "eval_batch_size": 64,
+    "use_amp": true,
+    "lowercase_metrics": true
+  },
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "transformers": "5.22.1",
+  "gpu": "Tesla T4",
+  "n_train": 10498,
+  "n_dev": 2249,
+  "n_test": 2249,
+  "vocab_size": 62834,
+  "results": [
+    {
+      "tag": "A1",
+      "seed": 13,
+      "n_train": 10498,
+      "best_epoch": 10,
+      "best_step": 3290,
+      "dev_chrfpp": 47.95,
+      "dev_bleu": 30.18,
+      "minutes": 8.9,
+      "best_dir": "/content/drive/MyDrive/NeuralMachineTranslation/runs/phase2/A1_seed13/best"
+    },
+    {
+      "tag": "A1",
+      "seed": 42,
+      "n_train": 10498,
+      "best_epoch": 10,
+      "best_step": 3290,
+      "dev_chrfpp": 48.46,
+      "dev_bleu": 31.06,
+      "minutes": 8.8,
+      "best_dir": "/content/drive/MyDrive/NeuralMachineTranslation/runs/phase2/A1_seed42/best"
+    },
+    {
+      "tag": "A1",
+      "seed": 2024,
+      "n_train": 10498,
+      "best_epoch": 10,
+      "best_step": 3290,
+      "dev_chrfpp": 48.24,
+      "dev_bleu": 30.58,
+      "minutes": 8.9,
+      "best_dir": "/content/drive/MyDrive/NeuralMachineTranslation/runs/phase2/A1_seed2024/best"
+    }
+  ],
+  "best_steps": {
+    "13": 3290,
+    "42": 3290,
+    "2024": 3290
+  }
+}
